@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f1f1f1;
+    color: #333; /* Ensuring good contrast for readability */
+    font-size: 1em; /* Default font size for body text */
+    line-height: 1.5; /* For better readability */
+}
+
+.container {
+    padding-top: 60px; /* Space for the navbar */
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for high contrast */
+    color: white;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-left .logo {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-center h2 {
+    margin: 0;
+    font-size: 1.2em; /* Moderate font size for center heading */
+    color: white;
+}
+
+.navbar-tabs {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-tabs li {
+    display: inline-block;
+}
+
+.navbar-tabs a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em; /* Slightly reduced font size */
+}
+
+.navbar-tabs a:hover {
+    background-color: #4d89ff;
+}
+
+/* Form Styling */
+form {
+    width: 60%;
+    margin: 30px auto 20px auto; /* Adjust for spacing below navbar */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+}
+
+fieldset {
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    
+}
+
+legend {
+    font-size: 1.1em; /* Slightly larger for legends */
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+label {
+    font-size: 0.95em; /* Reduced font size for labels */
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+    font-size: 0.95em; /* Reduced font size for inputs */
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4d89ff; /* Focused state for better contrast */
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #4d89ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95em; /* Reduced font size */
+    cursor: pointer;
+    width: 100%;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b71e0;
+}
+
+button[type="button"] {
+    padding: 6px 12px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em; /* Reduced font size */
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+}
+
+button[type="button"]:hover {
+    background-color: #ff2a00;
+}
+
+/* Table Styling */
+.table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #333;
+    font-size: 0.95em; /* Reduced font size for table text */
+}
+
+th {
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+}
+
+input[type="number"] {
+    width: 100%;
+}
+
+input[type="number"]:read-only {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc; /* Lighter color for better readability */
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Error Messages Styling */
+span {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block;
+}
+

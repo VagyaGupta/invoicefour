@@ -1,0 +1,48 @@
+{
+  "invoices": [
+    {
+      "id": "11d7",
+      "invoiceNumber": "123",
+      "invoiceDate": "2024-11-13",
+      "paymentDueDate": "2024-11-05",
+      "referenceNumber": "123",
+      "referenceDate": "2024-11-20",
+      "deliveryDate": null,
+      "shipTo": "Gujarat",
+      "invoiceAmount": null,
+      "gst": 12,
+      "sgst": null,
+      "cgst": null,
+      "igst": null,
+      "items": [
+        {
+          "name": "lapi",
+          "description": "fast",
+          "quantity": 2,
+          "rate": 50000,
+          "amount": 100000
+        }
+      ]
+    }
+  ],
+  "buyerDetails": {
+    "vendorName": "XYZ Pvt Ltd",
+    "address": "5678 Vendor Street, Townsville, State-67890",
+    "contact": "+1-800-555-6789",
+    "email": "sales@xyzpltd.com"
+  },
+  "companyDetails": {
+    "companyName": "ABC Corporation",
+    "companyAddress": "1234 Business Park, Cityville, State-12345",
+    "companyPan": "ABCDE1234F",
+    "contact": "+1-800-555-1234",
+    "email": "contact@abccorp.com"
+  },
+  "bankDetails": {
+    "id": 1,
+    "bankName": "State Bank of India",
+    "bankAccountNumber": "1234567890123456",
+    "ifscCode": "SBIN0001234",
+    "accountHolderName": "John Doe"
+  }
+}
